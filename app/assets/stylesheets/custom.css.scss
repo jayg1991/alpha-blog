@@ -2,13 +2,14 @@
 
 body {padding: 125px 15px 0;}
 
+.banner {display:none;}
+
 .nav {
     width: 100%;
     clear: both;
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,.5);
     min-height: 125px;
 }
 
@@ -51,11 +52,50 @@ body {padding: 125px 15px 0;}
     font-size: 15px;
     padding: 10px 0;
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-weight: 600;
 }
 
-.nav-links:hover {text-decoration: none; color: #fff;}
+.nav-links:hover {text-decoration: none; color: #000;}
+
+table {width:100%;}
+
+th {font-size: 15px;}
+
+table a {text-transform: uppercase;}
+
+h1 {text-transform: capitalize;}
+
+#article_title, #article_description {
+    width: 100%; 
+    max-width: 750px;
+    border: 1px solid #ccc;
+}
+
+#article_description {height: 200px;}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: rgb(230,82,42);
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.error-messages {
+    background-color: rgba(230,82,42,.75);
+    border: 1px solid rgb(230,82,42);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.error-messages h2 {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+}
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
